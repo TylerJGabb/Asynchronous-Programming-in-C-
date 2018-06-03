@@ -7,8 +7,7 @@ namespace Fundamentals
     {
         static void Main(string[] args)
         {
-            Locking.Good();
-            Console.Read();
+            Console.WriteLine("Take a look at the classes in this project to see demonstrations of fundamentals");
         }
     }
 }

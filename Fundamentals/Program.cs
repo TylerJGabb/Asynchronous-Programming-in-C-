@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Fundamentals
 {
@@ -6,7 +7,8 @@ namespace Fundamentals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Locking.Good();
+            Console.Read();
         }
     }
 }

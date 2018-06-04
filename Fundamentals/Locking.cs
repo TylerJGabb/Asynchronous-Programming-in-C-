@@ -26,12 +26,10 @@ namespace Fundamentals
         /// A static object (of reference type) that can be used to synchronize the lock.
         /// It is convention to have this be a static property of the class enclosing the thread logic
         /// </summary>
-        private static object _synchronizationObject = new
-        {
-            //Any reference type will do. 
-        };
+        private static object _synchronizationObject = new object();
 
-        private static int _sharedVariable;
+
+        private static volatile int _sharedVariable;
 
         private static void PrintStars()
         {
